@@ -1,8 +1,16 @@
 <template>
-  <button class="g-button">一个按钮</button>
+  <button class="g-button">
+    <svg class="icon">
+      <use xlink:href="`#i-${icon}`"></use>
+    </svg>
+    <slot></slot>
+  </button>
 </template>
 <script>
-export default {};
+export default {
+  name: "g-button",
+  props: ["icon"]
+};
 </script>
 
 <style scoped lang='scss'>
@@ -21,6 +29,10 @@ export default {};
   }
   &:focus {
     outline: none;
+  }
+  .icon {
+    height: 1em;
+    width: 1em;
   }
 }
 </style>
