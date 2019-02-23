@@ -9,13 +9,45 @@ Vue.component('g-button-group', ButtonGroup)
 new Vue({
   el: '#app'
 })
+
+import chai from 'chai'
+const expect = chai.expect
 // 单元测试
 {
   const Constructor = Vue.extend(Button)
   let btn = new Constructor({
-    propsData:{
-      icon:'settings'
+    propsData: {
+      icon: 'settings'
     }
   })
   btn.$mount('#test')
+  let useElement = btn.$el.querySelector('use')
+  let href = useElement.getAttribute('xlink:href')
+  expect(href).to.eq('#i-settings')
+}
+{
+  const Constructor = Vue.extend(Button)
+  let btn = new Constructor({
+    propsData: {
+      icon: 'settings',
+      loading: true
+    }
+  })
+  btn.$mount()
+  let useELement = btn.$el.querySelector('use')
+  let href = useELement.getAttribute('xlink:href')
+  expect(href).to.eq('#i-loading')
+}
+{
+  const Constructor = Vue.extend(Button)
+  let btn = new Constructor({
+    propsData: {
+      icon: 'settings',
+      loading: true
+    }
+  })
+  btn.$mount()
+  let useELement = btn.$el.querySelector('use')
+  let href = useELement.getAttribute('xlink:href')
+  expect(href).to.eq('#i-loading')
 }
