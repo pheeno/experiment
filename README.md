@@ -1,5 +1,11 @@
 # gulu
-这是一个vue造轮子的组件
-2019年02月16日01:15:15
-单文件组件创建
-travis.yml
+[![Build Status](https://www.travis-ci.org/pheeno/gulu.svg?branch=master)](https://www.travis-ci.org/pheeno/gulu)
+## 介绍
+## 开始使用
+1. 安装
+
+## 文档
+## 提问
+## 变更记录
+## 贡献
+## 联系方式
