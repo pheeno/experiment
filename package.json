@@ -21,6 +21,7 @@
     "vue": "./node_modules/vue/dist/vue.common.js"
   },
   "dependencies": {
+    "chai-spies": "^1.0.0",
     "vue": "^2.6.6",
     "vue-hot-reload-api": "^2.3.2"
   },

@@ -68,4 +68,42 @@
 .g-button-group > .g-button[data-v-ee37a2]:hover {
   position: relative;
   z-index: 1;
+}.wrapper[data-v-beb589] {
+  font-size: 14px;
+}
+.wrapper[data-v-beb589] > :not(:last-child) {
+  margin-right: 0.5em;
+}
+.wrapper.error[data-v-beb589] {
+  display: inline-flex;
+  align-items: center;
+}
+.wrapper.error > input[data-v-beb589] {
+  border-color: #f1453d;
+}
+.wrapper.error > .icon-error[data-v-beb589] {
+  fill: #f1453d;
+}
+.wrapper.error > .error-message[data-v-beb589] {
+  color: #f1453d;
+}
+.wrapper > input[data-v-beb589] {
+  height: 32px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: inherit;
+  padding: 0 8px;
+  outline: none;
+}
+.wrapper > input[data-v-beb589]:hover {
+  border-color: #666;
+}
+.wrapper > input[data-v-beb589]:focus {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.wrapper > input[disabled][data-v-beb589],
+.wrapper > input [readonly][data-v-beb589] {
+  color: #aaa;
+  border-color: #aaa;
+  cursor: not-allowed;
 }
