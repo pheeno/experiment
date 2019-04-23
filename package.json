@@ -4,7 +4,8 @@
   "description": "这是一个vue造轮子的组件",
   "main": "index.js",
   "scripts": {
-    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run"
+    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
+    "start": "parcel index.html --no-cache"
   },
   "repository": {
     "type": "git",
